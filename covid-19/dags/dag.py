@@ -69,7 +69,7 @@ default_arguments = {
 
 with DAG(
     "Covid19_Report_By_Time",
-    schedule_interval="@daily",
+    schedule_interval="6 4 * * *",
     default_args=default_arguments,
     description="Test pipeline for COVID-19.",
     catchup=False,
